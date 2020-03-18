@@ -13,7 +13,7 @@ Pod::Spec.new do |spec|
   spec.author             = { "CCYSmile" => "cuiChangYunSmile@icloud.com" }
   spec.platform     = :ios, "9.0"
   spec.source       = { :git => "https://github.com/CCYSmile/YRFeedback.git", :tag => "#{spec.version}" }
-  spec.source_files  = "YRFeedback/**/*.{h,m}"
+  spec.source_files  = "YRFeedback/Feedback/*.{h,m}"
   spec.resource     = 'YRFeedback/Feedback/YRFeedback.bundle'
   spec.dependency "QMUIKit", "~> 4.0.4"
   spec.dependency "NerdyUI"
