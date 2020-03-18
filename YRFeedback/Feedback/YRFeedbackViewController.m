@@ -128,7 +128,7 @@ typedef void (^YRFeedbackActionBlock)(YRFeedbackAction);
                  @(10)
                  ).embedIn(contentView).centerAlignment;
         
-        self.fixHeight(contentH+StatusBarHeight);
+        self.fixHeight(contentH+SafeAreaInsetsConstantForDeviceWithNotch.top);
         
         cancel.onClick(^{
             !self.navActionBlock?:self.navActionBlock(YRFeedbackCancel);
