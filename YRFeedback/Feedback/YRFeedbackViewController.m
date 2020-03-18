@@ -8,8 +8,8 @@
 
 #import "YRFeedbackViewController.h"
 #import "PaintView.h"
-#import <NerdyUI.h>
-#import <QMUIKit.h>
+#import "NerdyUI.h"
+#import "QMUIKit.h"
 #import "YRFeedbackActionManager.h"
 #import "NSBundle+YRFeedback.h"
 #import "UIView+ConvertToImage.h"
@@ -257,7 +257,7 @@ typedef void (^YRFeedbackActionBlock)(YRFeedbackAction);
 }
 @end
 
-@interface YRFeedbackViewController ()
+@interface YRFeedbackViewController ()<QMUIModalPresentationContentViewControllerProtocol>
 @property (strong, nonatomic) PaintView *paintView;
 @property (strong, nonatomic) UIImageView *screenshotImageView;
 @property (strong, nonatomic) YRFeedbackView *headerView;

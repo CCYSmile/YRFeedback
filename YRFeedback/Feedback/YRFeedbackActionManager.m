@@ -7,8 +7,8 @@
 //
 
 #import "YRFeedbackActionManager.h"
-#import <Qiniu/QiniuSDK.h>
-
+#import "Qiniu/QiniuSDK.h"
+#import "QMUIKit.h"
 #import "AFNetworking.h"
 #import <sys/utsname.h>//要导入头文件
 @implementation YRFeedbackTapd
@@ -316,7 +316,8 @@ if ([deviceModel isEqualToString:@"x86_64"])       return @"Simulator";
 }
 
 - (void)dismissFeedbackView{
-    [self.modalViewController hideWithAnimated:YES completion:^(BOOL finished) {
+    QMUIModalPresentationViewController *modalViewController = self.modalViewController;
+    [modalViewController hideWithAnimated:YES completion:^(BOOL finished) {
         
     }];
 }

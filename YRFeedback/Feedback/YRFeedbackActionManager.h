@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <QMUIKit.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 // http://www.tracup.com/doc/api#createIssue
@@ -36,7 +36,7 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 @interface YRFeedbackActionManager : NSObject
-@property (weak,nonatomic) QMUIModalPresentationViewController*modalViewController;
+@property (weak,nonatomic) id modalViewController;
 @property (strong,nonatomic) YRFeedbackTracpUp *tracUp;
 @property (strong,nonatomic) YRFeedbackTapd *tapd;
 
